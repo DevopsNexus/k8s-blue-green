@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: blue-app
+        app: app
         color: blue
     spec:
       containers:
