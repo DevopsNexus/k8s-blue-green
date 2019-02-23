@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: green-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: green-app
+  template:
+    metadata:
+      labels:
+        app: green-app
+        color: green
+    spec:
+      containers:
+      - name: green-app
+        image: devopsnexus/bg-app
+        imagePullPolicy: Never
