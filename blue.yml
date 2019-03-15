@@ -16,4 +16,4 @@ spec:
       containers:
       - name: blue-app
         image: devopsnexus/bg-app
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
